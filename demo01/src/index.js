@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import TodoList from './TodoList';
+import AppRouter from './AppRouter'
 
 ReactDOM.render(
   <React.StrictMode>
-    <TodoList />
+    <AppRouter />
   </React.StrictMode>,
   document.getElementById('root')
 );
