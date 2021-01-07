@@ -1,10 +1,12 @@
 import React from 'react';
-import {Link,  Route} from 'react-router-dom'
+import {Link,  Route, Redirect} from 'react-router-dom'
 import ReactPage from './video/reactPage'
 import Flutter from './video/flutter'
 import Vue from './video/vue'
 
 export default function Video () {
+
+
   return (
     <div>
         <div className='topNav'>
@@ -14,6 +16,7 @@ export default function Video () {
             <li><Link to='/video/flutter/'>flutter 教程</Link></li>
           </ul>
         </div>
+          <h2>视频教程</h2>
         <div className='videoContent'>
             <Route path='/video/react/' component={ReactPage} />
             <Route path='/video/vue/' component={Vue} />
